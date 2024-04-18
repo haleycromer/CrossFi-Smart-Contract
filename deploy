@@ -1,0 +1,21 @@
+mkdir crossfi_quickstart && cd crossfi_quickstart && npm init -y
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+ls
+sudo
+touch package.json
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+forge init counter_contract
+% brew install libusb
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+forge init counter_contract
+forge build
+% cd counter_contract
+forge test 
+forge create --rpc-url https://rpc.testnet.ms \
+--private-key YOUR_PRIVATE_KEY \
+src/Counter.sol:Counter 
+cast send YOUR_CONTRACT_ADDRESS "setNumber(uint256)" 5 --rpc-url https://rpc.testnet.ms --private-key YOUR_PRIVATE_KEY
+cast send YOUR_CONTRACT_ADDRESS "increment()" --rpc-url https://rpc.testnet.ms --private-key YOUR_PRIVATE_KEY
